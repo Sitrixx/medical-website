@@ -15,7 +15,7 @@ const AboutPage = () => {
             </SecondTitleReveal>
           </div>
           <div className="flex flex-col w-full space-y-3 md:space-y-9 items-center justify-center">
-            <TitleReveal className="text-center -tracking-wider text-3xl md:text-5xl lg:text-6xl xl:text-7xl">
+            <TitleReveal className="text-center -tracking-wider font-semibold text-3xl md:text-5xl lg:text-6xl xl:text-7xl">
               Connecting You to Global Healthcare Excellence.
             </TitleReveal>
             <p className="text-xs lg:text-sm leading-relaxed font-light text-center md:text-sm md:font-normal">

@@ -44,7 +44,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className="text-white h-full space-y-6 md:space-y-9 flex items-center justify-center max-w-2xl flex-col md:w-9/12">
-            <TitleReveal className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-7xl">
+            <TitleReveal className="text-center text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-medium">
               Book appointments with local doctors in your plan.
             </TitleReveal>
             <p className="text-xs lg:text-sm leading-relaxed font-light text-center md:text-sm md:font-normal">

@@ -35,8 +35,8 @@ const DoctorsPage = () => {
                 ></div>
               ))}
             </div>
-            <div className="flex flex-col space-y-3">
-              <TitleReveal className="text-center -tracking-wider text-4xl md:text-5xl font-medium">
+            <div className="flex flex-col space-y-3 items-center justify-center">
+              <TitleReveal className="text-center -tracking-wider text-4xl md:text-5xl font-semibold">
                 1000+ Doctors from Around the World
               </TitleReveal>
               <p className="text-xs lg:text-sm leading-relaxed font-light text-center md:text-sm md:font-normal max-w-xs">

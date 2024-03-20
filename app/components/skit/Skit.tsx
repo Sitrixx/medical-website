@@ -29,7 +29,7 @@ const Skit = ({ title, description, background, id }: any) => {
             )}
           >
             <div>
-              <TitleReveal className="text-3xl lg:text-4xl tracking-tight font-medium">
+              <TitleReveal className="text-3xl lg:text-4xl tracking-tight font-semibold">
                 {title}
               </TitleReveal>
             </div>

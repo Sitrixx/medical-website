@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const RevealWord = ({ word, index }: any) => {
-  const delay = index === 0 ? 0 : 0.08 * index;
+  const delay = index === 0 ? 0 : 0.14 * index;
 
   return (
     <motion.span
@@ -13,7 +13,7 @@ const RevealWord = ({ word, index }: any) => {
         scale: [0.4, 1.3, 1],
       }}
       transition={{
-        duration: 0.2,
+        duration: 0.3,
         delay: delay,
       }}
       className="inline-block"
