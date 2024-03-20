@@ -3,6 +3,7 @@ import AboutPage from "../components/pages/AboutPage";
 import DoctorsPage from "../components/pages/DoctorsPage";
 import HomePage from "../components/pages/HomePage";
 import Skit from "../components/skit/Skit";
+import ExpertisesPage from "../components/pages/ExpertisesPage";
 
 const skits = [
   {
@@ -42,6 +43,7 @@ export default function Home() {
               title={item.title}
               background={item.image}
             />
+            {i === 0 && <ExpertisesPage />}
             {i === 1 && <DoctorsPage />}
           </React.Fragment>
         );

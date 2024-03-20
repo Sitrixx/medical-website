@@ -1,4 +1,5 @@
 import TitleReveal from "@/app/animations/TitleReveal";
+import Link from "next/link";
 
 const navItems = [
   {
@@ -29,9 +30,9 @@ const HomePage = () => {
       <div className="h-svh w-full p-8 md:px-14 md:py-10 lg:px-16 bg-[#000000ad]">
         <div className="h-full flex flex-col w-full items-center">
           <div className="w-full flex flex-row justify-between max-w-screen-2xl mx-auto">
-            <h1 className="text-white text-lg">
+            <Link href="/" className="text-white text-lg">
               <span className="font-bold">Uni</span>care
-            </h1>
+            </Link>
             <div className="hidden md:flex flex-row space-x-12 text-white text-xs font-light lg:text-sm items-center justify-center">
               {navItems.map((item) => {
                 return (

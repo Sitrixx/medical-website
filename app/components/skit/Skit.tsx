@@ -19,7 +19,7 @@ const Skit = ({ title, description, background, id }: any) => {
         <div
           className={clsx(
             "p-8 md:px-14 md:py-10 lg:px-16 w-full h-full md:w-1/2",
-            id === 2 ? "bg-transparent" : "bg-white"
+            id === 2 ? "bg-transparent" : "bg-rose-100"
           )}
         >
           <div
@@ -44,7 +44,7 @@ const Skit = ({ title, description, background, id }: any) => {
               </p>
               <SecondTitleReveal
                 className="font-medium text-lg xl:text-xl"
-                delay={0.8}
+                delay={0.2}
               >
                 All Specialist
               </SecondTitleReveal>
