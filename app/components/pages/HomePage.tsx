@@ -8,19 +8,15 @@ const navItems = [
   },
   {
     id: 1,
-    name: "Services",
-  },
-  {
-    id: 2,
-    name: "Doctors",
-  },
-  {
-    id: 3,
     name: "About",
   },
   {
-    id: 4,
-    name: "Support",
+    id: 2,
+    name: "Services",
+  },
+  {
+    id: 3,
+    name: "Doctors",
   },
 ];
 
@@ -36,9 +32,13 @@ const HomePage = () => {
             <div className="hidden md:flex flex-row space-x-12 text-white text-xs font-light lg:text-sm items-center justify-center">
               {navItems.map((item) => {
                 return (
-                  <h1 key={item.id} className="cursor-pointer">
+                  <Link
+                    href={`#${item.name.toLowerCase()}`}
+                    key={item.id}
+                    className="cursor-pointer"
+                  >
                     {item.name}
-                  </h1>
+                  </Link>
                 );
               })}
             </div>

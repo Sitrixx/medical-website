@@ -3,7 +3,10 @@ import TitleReveal from "@/app/animations/TitleReveal";
 
 const AboutPage = () => {
   return (
-    <section className="h-svh w-full p-8 md:px-14 md:py-10 lg:px-16 bg-white">
+    <section
+      className="h-svh w-full p-8 md:px-14 md:py-10 lg:px-16 bg-white"
+      id="about"
+    >
       <div className="h-full flex flex-col w-full items-center">
         <div className="h-full space-y-12 md:space-y-16 flex items-center justify-center max-w-2xl flex-col md:w-9/12">
           <div className="w-full flex flex-row max-w-screen-2xl items-center justify-center">

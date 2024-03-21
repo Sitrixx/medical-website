@@ -30,7 +30,10 @@ const Circle: React.FC<ICircle> = ({ angle, image }) => {
 
 const DoctorsPage = () => {
   return (
-    <section className="h-svh w-full p-8 md:px-14 md:py-10 lg:px-16 bg-white relative flex items-center justify-center">
+    <section
+      className="h-svh w-full p-8 md:px-14 md:py-10 lg:px-16 bg-white relative flex items-center justify-center"
+      id="doctors"
+    >
       <div className="h-full flex flex-col w-full items-center">
         <div className="h-full flex items-center justify-center max-w-2xl flex-col md:w-9/12">
           <div className="flex flex-col md:w-7/12 space-y-16 md:space-y-9 items-center justify-center">
