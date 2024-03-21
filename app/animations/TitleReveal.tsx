@@ -2,7 +2,17 @@
 
 import { motion } from "framer-motion";
 
-const RevealWord = ({ word, index }: any) => {
+interface IRevealWord {
+  word: string;
+  index: number;
+}
+
+interface ITitleReveal {
+  children: string;
+  className: string;
+}
+
+const RevealWord: React.FC<IRevealWord> = ({ word, index }) => {
   const delay = index === 0 ? 0 : 0.14 * index;
 
   return (
@@ -24,7 +34,7 @@ const RevealWord = ({ word, index }: any) => {
   );
 };
 
-const TitleReveal = ({ children, className }: any) => {
+const TitleReveal: React.FC<ITitleReveal> = ({ children, className }) => {
   const words = children.split(" ");
 
   return (

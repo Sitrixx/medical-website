@@ -18,7 +18,7 @@ const ExpertisesPage = () => {
     "Cardiology",
   ]);
 
-  const getDelay = (i: any) => {
+  const getDelay = (i: number) => {
     let delay = 0;
 
     if (i === 2) delay = 0.2;
@@ -32,9 +32,9 @@ const ExpertisesPage = () => {
     if (isInView) {
       const timeoutId = setTimeout(() => {
         setIsVisible((prev) => !prev);
-        setWords((prevWords) => {
-          const newWords = [...prevWords];
-          const firstWord: any = newWords.shift();
+        setWords((prevWords: string[]) => {
+          const newWords: string[] = [...prevWords];
+          const firstWord: string = newWords.shift()!;
           newWords.push(firstWord);
           return newWords;
         });

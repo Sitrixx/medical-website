@@ -1,9 +1,19 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { useLayoutEffect, useRef } from "react";
+import { useRef } from "react";
 
-const SecondTitleReveal = ({ children, className, delay }: any) => {
+interface ISecondTitleReveal {
+  children: React.ReactNode;
+  className: string;
+  delay: number;
+}
+
+const SecondTitleReveal: React.FC<ISecondTitleReveal> = ({
+  children,
+  className,
+  delay,
+}) => {
   const ref = useRef(null);
   const isInView = useInView(ref);
 

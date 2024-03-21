@@ -2,7 +2,14 @@ import SecondTitleReveal from "@/app/animations/SecondTitleReveal";
 import TitleReveal from "@/app/animations/TitleReveal";
 import clsx from "clsx";
 
-const Skit = ({ title, description, background, id }: any) => {
+interface ISkit {
+  title: string;
+  description: string;
+  background: string;
+  id: number;
+}
+
+const Skit: React.FC<ISkit> = ({ title, description, background, id }) => {
   return (
     <section
       className={clsx(
